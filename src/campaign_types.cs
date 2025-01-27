@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ActiveCampaign;
 
-namespace ActiveCampaign {
-    public static class CampaignTypes {
-        public readonly static string Single = "single";
-        public readonly static string Split = "split";
-    }
+public static class CampaignTypes
+{
+    public static readonly string Single = "single";
+    public static readonly string Split = "split";
 }

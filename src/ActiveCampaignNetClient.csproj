@@ -15,17 +15,35 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/mchiz/active-campaign-net-client</RepositoryUrl>
     <Authors>Carlos Campaña Molinero</Authors>
+    <RootNamespace>ActiveCampaign</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\**" />
+    <EmbeddedResource Remove="Exceptions\**" />
+    <None Remove="Exceptions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="campaign_data.cs" />
+    <Compile Remove="campaign_status.cs" />
+    <Compile Remove="campaign_types.cs" />
+    <Compile Remove="contact_custom_field_data.cs" />
+    <Compile Remove="contact_data.cs" />
+    <Compile Remove="contact_input_data.cs" />
+    <Compile Remove="contact_list_status.cs" />
+    <Compile Remove="custom_field_data.cs" />
+    <Compile Remove="get_campaigns_options.cs" />
+    <Compile Remove="get_contacts_options.cs" />
+    <Compile Remove="list_data.cs" />
+    <Compile Remove="tag_data.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>
